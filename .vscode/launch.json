@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug Jest Tests",
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+        "args": ["--runInBand"],
+        "runtimeExecutable": "node",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "type": "node-terminal",
+        "name": "Patient Insurance Debug",
+        "request": "launch",
+        "command": "nvm use 18 && yarn run start:debug",
+      }
+    ]
+  }
+  
